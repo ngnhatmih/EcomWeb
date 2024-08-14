@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeoBeo - Thời trang giới trẻ</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo-white.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const item3 = document.querySelector('.item3');
+            const menu = document.querySelector('.menu');
+
+            let timeout;
+
+            item3.addEventListener('mouseover', () => {
+                clearTimeout(timeout);
+                menu.classList.add('active');
+            });
+
+            item3.addEventListener('mouseout', () => {
+                timeout = setTimeout(() => {
+                    menu.classList.remove('active');
+                    item3.style.borderBottom = 'none';
+                }, 200);
+            });
+
+            menu.addEventListener('mouseover', () => {
+                clearTimeout(timeout);
+                menu.classList.add('active');
+            });
+
+            menu.addEventListener('mouseout', () => {
+                timeout = setTimeout(() => {
+                    menu.classList.remove('active');
+                    item3.style.borderBottom = 'none';
+                }, 200);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="freeship">
+            <p>miễn phí vận chuyển toàn quốc tới <span>99k+</span></p>
+        </div>
+        <nav>
+            <div class="logo">
+                <a href=""><img src="assets/images/logo.png" alt="" style="width: 100%; height: 100%; object-fit: contain;"></a>
+            </div>
+            <a href="collections/products.html" class="item item0">sản phẩm</a>
+            <a href="#best-seller" class="item item1">best seller</a>
+            <a href="#hot-sale" class="item item2">hot sale</a>
+            <a href="" class="item item3">danh mục</a>
+
+            <div class="search-box">
+                <input id="onclick" type="checkbox" checked>
+                <label class="btn" for="onclick"><i class="fas fa-search"></i></label>
+                <input class="search-bar" type="text" placeholder="Tìm kiếm sản phẩm...">
+            </div>
+
+            <div class="authentication">
+                <div class="login" id="login">
+                    <a >Đăng nhập</a>
+                </div>
+                <div class="signup" id="signup">
+                    <a >Đăng ký</a>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="col col1">
+                    <span class="title">GIÀY</span>
+                    <ul>
+                        <li><a href="">Thể thao</a></li>
+                        <li><a href="">Chạy bộ</a></li>
+                        <li><a href="">Ngoài trời</a></li>
+                        <li><a href="">Dép</a></li>
+                    </ul>
+                </div>
+                <div class="col col2">
+                    <span class="title">ÁO</span>
+                    <ul>
+                        <li><a href="">Áo thun & Áo polo</a></li>
+                        <li><a href="">Áo jersey</a></li>
+                        <li><a href="">Áo hoodie & Sweatshirt</a></li>
+                        <li><a href="">Áo vest</a></li>
+                        <li><a href="">Áo khoác</a></li>
+                        <li><a href="">Áo sơ mi</a></li>
+                    </ul>
+                </div>
+                <div class="col col1">
+                    <span class="title">QUẦN</span>
+                    <ul>
+                        <li><a href="">Quần tây</a></li>
+                        <li><a href="">Quần jeans</a></li>
+                        <li><a href="">Quần kaki</a></li>
+                        <li><a href="">Quần jogger</a></li>
+                        <li><a href="">Quần short</a></li>
+                    </ul>
+                </div>
+                <div class="col col1">
+                    <span class="title">PHỤ KIỆN</span>
+                    <ul>
+                        <li><a href="">Thắt lưng</a></li>
+                        <li><a href="">Ví da</a></li>
+                        <li><a href="">Cà vạt</a></li>
+                        <li><a href="">Mũ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                    checked="checked">
+                <div class="carousel-item">
+                    <img src="assets/images/banner1.png">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="assets/images/banner2.png">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="assets/images/banner3.png">
+                </div>
+                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                <label for="carousel-2" class="carousel-control next control-1">›</label>
+                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                <label for="carousel-3" class="carousel-control next control-2">›</label>
+                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                <label for="carousel-1" class="carousel-control next control-3">›</label>
+                <ol class="carousel-indicators">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-3" class="carousel-bullet">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="collections">
+            <div class="collection all">
+                <a href="collections/products.html">
+                    <img src="https://media3.coolmate.me/cdn-cgi/image/width=1069,height=1575,quality=80,format=auto/uploads/March2024/mceclip17_50.png" alt="">
+                </a>
+            </div>
+            <div class="collection all">
+                <a href="collections/products.html">
+                    <img src="https://media3.coolmate.me/cdn-cgi/image/width=1069,height=1575,quality=80,format=auto/uploads/March2024/mceclip16_23.png" alt="">
+                </a>
+            </div>
+            <div class="collection all">
+                <a href="collections/products.html">
+                    <img src="https://media3.coolmate.me/cdn-cgi/image/width=1069,height=1575,quality=80,format=auto/uploads/March2024/mceclip14_100.png" alt="">
+                </a>
+            </div>
+            <div class="collection all">
+                <a href="collections/products.html">
+                    <img src="https://media2.coolmate.me/cdn-cgi/image/width=1426,height=2100,quality=80,format=auto/uploads/March2024/mceclip15_43.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="header">
+                <span>sản phẩm mới</span>
+            </div>
+            <div class="flex-box box1">
+                <div class="container container1">
+                    <div class="header">
+                        <span>áo sơ mi</span>
+
+                        <div class="more">
+                            <a href="collections/p1.html"><span>xem tất cả</span></a>
+                        </div>
+                    </div>
+
+                    <div class="product-wrapper">
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/smid0237_23c5f7c34eeb4530a1095fc66485c26e_large.jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Sơ Mi Nam Cuban ICONDENIM Linen Summer Pattern </span>
+                                </div>
+                                <div class="price">
+                                    <span>320,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/160_ao_khoac_1m-12_c14cfb0d646f40f1bd33659e0f404a03_large.jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Sơ Mi Nam ICONDENIM Box Pocket Denim</span>
+                                </div>
+                                <div class="price">
+                                    <span>450,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/han3636_edit_792d760184804754930b9bfde72e2338_large.png" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span> Áo Sơ Mi Nam Bamboo ICONDENIM Regular - ButtonDown </span>
+                                </div>
+                                <div class="price">
+                                    <span>390,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+    
+                <div class="container container2">
+                    <div class="header">
+                        <span>áo polo</span>
+
+                        <div class="more">
+                            <a href="collections/p2.html"><span>xem tất cả</span></a>
+                        </div>
+                    </div>
+
+                    <div class="product-wrapper">
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/ao_polo_nam_icondenim_accelerate_avenue_gap_dung_80cf7c2b655d4e61bbd8eeff8800ac19_large.jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span> Áo Polo Nam ICONDENIM Accelerate Avenue  </span>
+                                </div>
+                                <div class="price">
+                                    <span>390,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/160_polo_1m-9_ca727476654b4c2283cad4480f5e52cd_large.jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span> Áo Polo Raglan Nam ICONDENIM Vertical Stripes N </span>
+                                </div>
+                                <div class="price">
+                                    <span>350,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/z5419697094314_7f99f1fb24abab8c904e5fbe7b33dff8_a92c96b7eb3e44328ca9bd57e2ee1720_large.jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>  Áo Polo Nam ICONDENIM Basic Cafe  </span>
+                                </div>
+                                <div class="price">
+                                    <span>390,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+    
+            </div>
+            <div class="flex-box box2">
+                <div class="container container1">
+                    <div class="header">
+                        <span>quần jean</span>
+
+                        <div class="more">
+                            <a href="collections/p3.html"><span>xem tất cả</span></a>
+                        </div>
+                    </div>
+
+                    <div class="product-wrapper">
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/quan_jeans_nam_icondenim_straight-fit_beige_wash_mat_truoc_2d811b6e504249118a297600aa9147f7_large.jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span> Quần Jean Nam ICONDENIM Straight-Fit Beige Wash  </span>
+                                </div>
+                                <div class="price">
+                                    <span>550,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/z5508797152168_293d57c7bb8693fbaed3b02c725f702c_f9f9e8f15ed549ecad32c57614069864_large.jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span> Quần Smart Jean Nam ICONDENIM Black Wash </span>
+                                </div>
+                                <div class="price">
+                                    <span>590,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/quan_jeans_cargo_nam_icondenim_straight_grey_wash_mat_truoc_a6825778b7ae4e99a89d7663f6b99e12_large.jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>  Quần Jean Cargo Nam ICONDENIM Straight Grey Wash  </span>
+                                </div>
+                                <div class="price">
+                                    <span>690,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="container container2">
+                    <div class="header">
+                        <span>quần tây</span>
+
+                        <div class="more">
+                            <a href="collections/p4.html"><span>xem tất cả</span></a>
+                        </div>
+                    </div>
+
+                    <div class="product-wrapper">
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/160_quan_tay_2m_-3_8bda4ce0084c4a62a95f8c4461ca0333_large.jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span> Quần Tây Nam ICONDENIM Sibetab Slim Fit </span>
+                                </div>
+                                <div class="price">
+                                    <span>420,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/160_quan_tay_3m-10_ca9e2f12552d4ee4b87cb0c743dcfcbf_large.jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span> Quần Tây Nam ICONDENIM Basic Form Slim </span>
+                                </div>
+                                <div class="price">
+                                    <span>390,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000253775/product/160_quan_tay_4m-11_7ab6135e5dc74e2b9e7c552e1d15b1e7_large.jpg" alt="">
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span> Quần Tây Nam ICONDENIM Classic - Slim </span>
+                                </div>
+                                <div class="price">
+                                    <span>390,000<sup>đ</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="banner-image" >
+            <img src="	https://file.hstatic.net/1000253775/file/banner_banchay_80d37604555b45fdaf10b85b4b7d8642.jpg
+            " alt="">
+        </div>
+
+        <div class="best-seller-block" id="best-seller">
+            <div class="title">
+                <div>
+                    <span class="header">BEST SELLER</span>
+                </div>
+            </div>
+
+            <div class="best-seller-wrapper">
+                <div class="product product1">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/00009547_d9f417027a8d4699b328aaf788104b7c_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Áo Thun Cutline Details Grey</span>
+                        </div>
+                        <div class="price">
+                            <span>270,000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product2">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/img_7175_084c6ff2749d4325ac0e02477f0f256e_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Quần Short Khaki Basic 4 Colors</span>
+                        </div>
+                        <div class="price">
+                            <span>330,000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product3">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/img_3805_f0683e86ff934364bda0ef221efaa7e1_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Set T-shirt Short Tropical Red Label</span>
+                        </div>
+                        <div class="price">
+                            <span>270.000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product4">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/img_4853_434868981a7b4f558351eb1c4bb2cb8c_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Áo Sơ Mi Relaxed Understripes Linen</span>
+                        </div>
+                        <div class="price">
+                            <span>330,000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product5">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/img_8939_5dea4aa7e2224db494ba31ec7f042416_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Áo Sơ Mi Nano May Basic</span>
+                        </div>
+                        <div class="price">
+                            <span>380,000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product6">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/img_4854_f90243bf49dc48d7b0fe39be62474e6a_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Áo Thun Ragline Cool Fab Logo S</span>
+                        </div>
+                        <div class="price">
+                            <span>280,000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product7">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/img_4836_2923fe399f7f46b69739a0b19deac167_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Set Áo Polo Cargo Short Options</span>
+                        </div>
+                        <div class="price">
+                            <span>350,000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product8">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/img_4324_517bbc4cc40140e99a70bb46c7a2083f_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Áo Thun Henley Slim White Gray Cream</span>
+                        </div>
+                        <div class="price">
+                            <span>290,000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product9">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/img_6614_82afb831e0464b4e9cdd88c834db6b8b_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Quần Tây Basic 4 Colors BTW</span>
+                        </div>
+                        <div class="price">
+                            <span>400,000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product10">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/img_8955_ab9087789c5941c69447b6686b52b02c_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Set Shirt Short Gradient Vibe Tropical</span>
+                        </div>
+                        <div class="price">
+                            <span>410,000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product11">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/img_7730_81d4f7521f4146ffb87b1b892a17773c_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Áo Thun Raglan Dualstripe Cool Fab</span>
+                        </div>
+                        <div class="price">
+                            <span>410,000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product12">
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000026602/product/img_1567_044afd67c5194d88b8f4f0c949958884_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <span>Áo Thun The Camp Series</span>
+                        </div>
+                        <div class="price">
+                            <span>320,000<u>đ</u></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more">
+                <a href=""><span>xem thêm</span></a>
+            </div>
+        </div>
+
+        <div class="sale-block">
+            <div class="title">
+                <div class="a">
+                    <span>HOT SALE</span>
+                </div>
+                <div class="countdown">
+                    <div style="width: 130px;" class="box">
+                        <h4 id="days-text">Days</h4>
+                        <p id="days">000</p>
+                    </div>
+                    <div class="box">
+                        <h4 id="hours-text">Hours</h4>
+                        <p id="hours">00</p>
+                    </div>
+                    <div class="box">
+                        <h4 id="minutes-text">Minutes</h4>
+                        <p id="minutes">00</p>
+                    </div>
+                    <div class="box">
+                        <h4 id="seconds-text">Seconds</h4>
+                        <p id="seconds">00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sale-wrapper" id="hot-sale">
+                <div class="product product1">
+                    <div class="sale-tag">
+                        <span>- 67%</span>
+                    </div>
+                    <div class="image">
+                        <img src="https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/9b8f78faee99493ebc3019e76b3f16f6~tplv-o3syd03w52-crop-jpeg:800:800.jpeg?from=1826719393"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <span class="title">Áo sơ mi cộc tay Original ODIN CLUB</span>
+                    </div>
+
+                    <div class="price">
+                        <span class="og-price"><del>350.000 <sup>đ</sup></del></span>
+                        <span class="sale-price">115.000 <sup>đ</sup> </span>
+                    </div>
+                </div>
+
+                <div class="product product1">
+                    <div class="sale-tag">
+                        <span>- 28%</span>
+                    </div>
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000253775/product/160_jean_1m-2_ece89ed61e674d119837f3c475452697_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <span class="title"> Quần Jean Nam ICONDENIM Dark-Grey Form Croped </span>
+                    </div>
+
+                    <div class="price">
+                        <span class="og-price"><del>550.000 <sup>đ</sup></del></span>
+                        <span class="sale-price">399.000 <sup>đ</sup> </span>
+                    </div>
+                </div>
+
+                <div class="product product1">
+                    <div class="sale-tag">
+                        <span>- 67%</span>
+                    </div>
+                    <div class="image">
+                        <img src="https://product.hstatic.net/1000253775/product/ao-thun-nam-icondenim-basic-good_34222b9ca2a8443187a744c8e6a6bc87_large.jpg"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <span class="title">Áo sơ mi cộc tay Original ODIN CLUB</span>
+                    </div>
+
+                    <div class="price">
+                        <span class="og-price"><del>350.000 <sup>đ</sup></del></span>
+                        <span class="sale-price">115.000 <sup>đ</sup> </span>
+                    </div>
+                </div>
+
+                <div class="product product1">
+                    <div class="sale-tag">
+                        <span>- 67%</span>
+                    </div>
+                    <div class="image">
+                        <img src="https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/9b8f78faee99493ebc3019e76b3f16f6~tplv-o3syd03w52-crop-jpeg:800:800.jpeg?from=1826719393"
+                            alt="">
+                        <div class="btn">
+                            <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                            <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                            <div class="button button3"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <span class="title">Áo sơ mi cộc tay Original ODIN CLUB</span>
+                    </div>
+
+                    <div class="price">
+                        <span class="og-price"><del>350.000 <sup>đ</sup></del></span>
+                        <span class="sale-price">115.000 <sup>đ</sup> </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more">
+                <a href=""><span>xem thêm</span></a>
+            </div>
+        </div>   
+
+        <div class="login-box" id="login-box">
+            <div class="form" id="form-login">
+                <div class="header">
+                    <span>Đăng nhập</span>
+                </div>
+                <div class="input-box">
+                    <input type="email" class="email-input" placeholder="Nhập email của bạn">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Nhập mật khẩu của bạn">
+                </div>
+                <div class="row">
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Ghi nhớ đăng nhập</label>
+                    </div>
+
+                    <div class="forgot">
+                        <a href="">Quên mật khẩu?</a>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button>Đăng nhập</button>
+                </div>
+                <div class="register">
+                    <a href="">Chưa có tài khoản? Đăng ký ngay</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="signup-box" id="signup-box">
+                <div class="form" id="form-signup">
+                    <div class="header">
+                        <span>Đăng ký</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="name-input" placeholder="Nhập tên của bạn">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" class="email-input" placeholder="Nhập email của bạn">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Nhập mật khẩu của bạn">
+                    </div>
+                    <div class="btn-box">
+                        <button>Đăng ký</button>
+                    </div>
+                    <div class="login">
+                        <a href="#" id="switch-to-login">Đã có tài khoản? Đăng nhập ngay</a>
+                    </div>
+                </div>
+        </div> 
+    </div>
+
+    <div class="mess">
+        <img src="assets/svg/messenger.svg" alt="">
+    </div>
+
+    <div class="scroll-top">
+        <a href="#">
+            <img src="assets/svg/scroll-top.svg" alt="">
+        </a>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+        <div class="description">
+            <p>Liên hệ: 1999.272727 - 027.7777.2727</p>
+            <p>(8:30 - 22:00)</p>
+            <p>Email: meobeo@meobeo.me</p>
+        </div>
+        
+        <div class="com">
+            <hr>
+            <p>© 2024 - CÔNG TY TNHH YAME VN</p>
+            <p>Giấy CNĐKDN: 09999999 - Ngày cấp 01/01/1999 -  Cơ quan cấp: Phòng Đăng Ký Kinh Doanh</p>
+            <p>Địa chỉ đăng ký kinh doanh: 123 A, Phường 9, Quận B, TP.C</p>
+        </div>
+    </footer>
+
+    <script>
+        const finaleTime = new Date("December 30, 2024 00:00:00").getTime();
+
+        const timer = () => {
+            const currentTime = new Date().getTime();
+            let difference = finaleTime - currentTime;
+
+            if (difference < 0) {
+                document.querySelector('.sale-block').style.display = 'none';
+            }
+
+            let days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            let hours = Math.floor(difference % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            let minutes = Math.floor(difference % (1000 * 60 * 60) / (1000 * 60));
+            let seconds = Math.floor(difference % (1000 * 60) / 1000);
+
+            days <= 99 ? days = `0${days}` : days;
+            days <= 9 ? days = `00${days}` : days;
+            hours <= 9 ? hours = `0${hours}` : hours;
+            minutes <= 9 ? minutes = `0${minutes}` : minutes;
+            seconds <= 9 ? seconds = `0${seconds}` : seconds;
+
+            document.querySelector('#days').textContent = days;
+            document.querySelector('#hours').textContent = hours;
+            document.querySelector('#minutes').textContent = minutes;
+            document.querySelector('#seconds').textContent = seconds;
+
+        }
+        timer();
+
+        setInterval(timer, 1000);
+    </script>
+
+    <script>
+        document.getElementById('login').addEventListener('click', function() {
+            var loginBox = document.getElementById('login-box');
+            if (!loginBox.classList.contains('active')) {
+                loginBox.classList.add('active');
+            }
+        });
+
+        document.getElementById('signup').addEventListener('click', function() {
+            var signupBox = document.getElementById('signup-box');
+            if (!signupBox.classList.contains('active')) {
+                signupBox.classList.add('active');
+            }
+        });
+
+        document.addEventListener('click', function(event) {
+            var loginBox = document.getElementById('login-box');
+            var isClickInside = document.getElementById('form-login').contains(event.target);
+            var isLoginLink = document.getElementById('login').contains(event.target);
+
+            var signupBox = document.getElementById('signup-box');
+            var isClickInsideSignup = document.getElementById('form-signup').contains(event.target);
+            var isSignupLink = document.getElementById('signup').contains(event.target);
+
+            if (!isClickInside && !isLoginLink) {
+                loginBox.classList.remove('active');
+            }
+
+            if (!isClickInsideSignup && !isSignupLink) {
+                signupBox.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

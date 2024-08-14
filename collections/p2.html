@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeoBeo - Thời trang giới trẻ</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            #this::before {
+                content: "\f105";
+                font-family: FontAwesome;
+                padding-right: 5px;
+            }
+        </style>
+</head>
+<body>
+
+    <header>
+        <div class="freeship">
+            <p>miễn phí vận chuyển toàn quốc tới <span>99k+</span></p>
+        </div>
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/images/logo.png" alt="" style="width: 100%; height: 100%; object-fit: contain;"></a>
+            </div>
+            <a href="../collections/products.html" class="item item0">sản phẩm</a>
+            <a href="../index.html#best-seller" class="item item1">best seller</a>
+            <a href="../index.html#hot-sale" class="item item2">hot sale</a>
+            <a href="" class="item item3">danh mục</a>
+
+            <div class="search-box">
+                <input id="onclick" type="checkbox" checked>
+                <label class="btn" for="onclick"><i class="fas fa-search"></i></label>
+                <input class="search-bar" type="text" placeholder="Tìm kiếm sản phẩm...">
+            </div>
+
+            <div class="authentication">
+                <div class="login" id="login">
+                    <a >Đăng nhập</a>
+                </div>
+                <div class="signup" id="signup">
+                    <a >Đăng ký</a>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="col col1">
+                    <span class="title">GIÀY</span>
+                    <ul>
+                        <li><a href="">Thể thao</a></li>
+                        <li><a href="">Chạy bộ</a></li>
+                        <li><a href="">Ngoài trời</a></li>
+                        <li><a href="">Dép</a></li>
+                    </ul>
+                </div>
+                <div class="col col2">
+                    <span class="title">ÁO</span>
+                    <ul>
+                        <li><a href="">Áo thun & Áo polo</a></li>
+                        <li><a href="">Áo jersey</a></li>
+                        <li><a href="">Áo hoodie & Sweatshirt</a></li>
+                        <li><a href="">Áo vest</a></li>
+                        <li><a href="">Áo khoác</a></li>
+                        <li><a href="">Áo sơ mi</a></li>
+                    </ul>
+                </div>
+                <div class="col col1">
+                    <span class="title">QUẦN</span>
+                    <ul>
+                        <li><a href="">Quần tây</a></li>
+                        <li><a href="">Quần jeans</a></li>
+                        <li><a href="">Quần kaki</a></li>
+                        <li><a href="">Quần jogger</a></li>
+                        <li><a href="">Quần short</a></li>
+                    </ul>
+                </div>
+                <div class="col col1">
+                    <span class="title">PHỤ KIỆN</span>
+                    <ul>
+                        <li><a href="">Thắt lưng</a></li>
+                        <li><a href="">Ví da</a></li>
+                        <li><a href="">Cà vạt</a></li>
+                        <li><a href="">Mũ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="main">
+        <div class="product-block" id="products">
+
+            <div class="row">
+                <div class="filter-panel">
+                    <div class="filter filter-category">
+                        <div class="header">
+                            <span>Thể loại</span>
+                        </div>
+                        <ul>
+                            <li><a href="">Giày</a></li>
+                            <li><a href="">Quần</a></li>
+                            <li><a href="" id="this">Áo</a></li>
+                            <li><a href="">Phụ kiện</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter filter-price">
+                        <div class="header">
+                            <span>Giá</span>
+                        </div>
+                        <ul>
+                            <li><input type="checkbox" id="p1"> <label for="p1">100k - 199k</label></li>
+                            <li><input type="checkbox" id="p2"> <label for="p2">200k - 599k</label></li>
+                            <li><input type="checkbox" id="p3"> <label for="p3">599k - 999k</label></li>
+                            <li><input type="checkbox" id="p4"> <label for="p4">+1tr</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter filter-size">
+                        <div class="header">
+                            <span>Cỡ</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="s1" class="size-checkbox" hidden>
+                                <label for="s1">
+                                    <div class="size">S</div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="s2" class="size-checkbox" hidden>
+                                <label for="s2">
+                                    <div class="size">M</div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="s3" class="size-checkbox" hidden>
+                                <label for="s3">
+                                    <div class="size">L</div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="s4" class="size-checkbox" hidden>
+                                <label for="s4">
+                                    <div class="size">XL</div>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="s5" class="size-checkbox" hidden>
+                                <label for="s5">
+                                    <div class="size">XXL</div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-wrapper page-1">
+                    <div class="tools">
+                        <div class="sort">
+                            <select name="" id="">
+                                <option value="">Mới nhất</option>
+                                <option value="">Giá: Thấp đến cao</option>
+                                <option value="">Giá: Cao đến thấp</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-grid">
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/img_6141_0c6a2a56fc9f4c15b6ac392afce0dbd1_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Athletic The Checked No 10</span>
+                                </div>
+                                <div class="price">
+                                    <span>450,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product2">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/img_6144_d4812f2d232443a489941f019b35f76a_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Blue Red Duo White Tropical</span>
+                                </div>
+                                <div class="price">
+                                    <span>360,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product3">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/img_7735_cb94ec4918244c0f955b0b2beddabfb6_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Rabbit Inno Black Beige</span>
+                                </div>
+                                <div class="price">
+                                    <span>360,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product4">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/00005041_5535a171370f4b7b965680da3dc99f4d_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Miniprint White Tropical</span>
+                                </div>
+                                <div class="price">
+                                    <span>380,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/img_5386_0d7e282cc7fc470f94512d2bf1cff853_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Pattern Duoline BTW</span>
+                                </div>
+                                <div class="price">
+                                    <span>340,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product2">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/00005041_5535a171370f4b7b965680da3dc99f4d_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Miniprint White Tropical</span>
+                                </div>
+                                <div class="price">
+                                    <span>380,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product3">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/00005043_1c1750e2f9414473959c5f57b3bf03f4_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Special Vacation Tropical</span>
+                                </div>
+                                <div class="price">
+                                    <span>390,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product4">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/img_0792_133282b840454e96a347e65d8e9104e8_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Regular V Cool Fab</span>
+                                </div>
+                                <div class="price">
+                                    <span>330,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/dsc00034_62e2aec1f54c4b2da62818940106942d_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo BW Pattern Leather Cir</span>
+                                </div>
+                                <div class="price">
+                                    <span>270,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product2">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/img_0575_07028368ae244bd288959813b668cfe6_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Minimal Bold White BTW</span>
+                                </div>
+                                <div class="price">
+                                    <span>300,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product3">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/img_0583_41ed22efd2df485784fb30bff1830ae9_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Minimal Brownies</span>
+                                </div>
+                                <div class="price">
+                                    <span>390,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product4">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/img_9410_82e9d38f6533494481477cd44085bb21_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Black Front White</span>
+                                </div>
+                                <div class="price">
+                                    <span>490,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product1">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/img_6141_0c6a2a56fc9f4c15b6ac392afce0dbd1_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Athletic The Checked No 10</span>
+                                </div>
+                                <div class="price">
+                                    <span>450,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product2">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/img_6144_d4812f2d232443a489941f019b35f76a_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Blue Red Duo White Tropical</span>
+                                </div>
+                                <div class="price">
+                                    <span>360,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product3">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/img_7735_cb94ec4918244c0f955b0b2beddabfb6_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Rabbit Inno Black Beige</span>
+                                </div>
+                                <div class="price">
+                                    <span>360,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product product4">
+                            <div class="image">
+                                <img src="https://product.hstatic.net/1000026602/product/00005041_5535a171370f4b7b965680da3dc99f4d_large.jpg"
+                                    alt="">
+                                <div class="btn">
+                                    <div class="button button1"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                    </div>
+                                    <div class="button button2"><a href=""><i class="fa-regular fa-heart"></i></a></div>
+                                    <div class="button button3"><a href=""><i
+                                                class="fa-solid fa-magnifying-glass"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info">
+                                <div class="name">
+                                    <span>Áo Polo Miniprint White Tropical</span>
+                                </div>
+                                <div class="price">
+                                    <span>380,000<u>đ</u></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="page-number">
+                        <ul>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href=""><i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="login-box" id="login-box">
+            <div class="form" id="form-login">
+                <div class="header">
+                    <span>Đăng nhập</span>
+                </div>
+                <div class="input-box">
+                    <input type="email" class="email-input" placeholder="Nhập email của bạn">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Nhập mật khẩu của bạn">
+                </div>
+                <div class="row">
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Ghi nhớ đăng nhập</label>
+                    </div>
+
+                    <div class="forgot">
+                        <a href="">Quên mật khẩu?</a>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button>Đăng nhập</button>
+                </div>
+                <div class="register">
+                    <a href="">Chưa có tài khoản? Đăng ký ngay</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="signup-box" id="signup-box">
+                <div class="form" id="form-signup">
+                    <div class="header">
+                        <span>Đăng ký</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="name-input" placeholder="Nhập tên của bạn">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" class="email-input" placeholder="Nhập email của bạn">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Nhập mật khẩu của bạn">
+                    </div>
+                    <div class="btn-box">
+                        <button>Đăng ký</button>
+                    </div>
+                    <div class="login">
+                        <a href="#" id="switch-to-login">Đã có tài khoản? Đăng nhập ngay</a>
+                    </div>
+                </div>
+        </div> 
+    </div>
+
+    <div class="mess">
+        <img src="../assets/svg/messenger.svg" alt="">
+    </div>
+
+    <div class="scroll-top">
+        <a href="#">
+            <img src="../assets/svg/scroll-top.svg" alt="">
+        </a>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="">
+        </div>
+        <div class="description">
+            <p>Liên hệ: 1999.272727 - 027.7777.2727</p>
+            <p>(8:30 - 22:00)</p>
+            <p>Email: meobeo@meobeo.me</p>
+        </div>
+        
+        <div class="com">
+            <hr>
+            <p>© 2024 - CÔNG TY TNHH YAME VN</p>
+            <p>Giấy CNĐKDN: 09999999 - Ngày cấp 01/01/1999 -  Cơ quan cấp: Phòng Đăng Ký Kinh Doanh</p>
+            <p>Địa chỉ đăng ký kinh doanh: 123 A, Phường 9, Quận B, TP.C</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('login').addEventListener('click', function() {
+            var loginBox = document.getElementById('login-box');
+            if (!loginBox.classList.contains('active')) {
+                loginBox.classList.add('active');
+            }
+        });
+
+        document.getElementById('signup').addEventListener('click', function() {
+            var signupBox = document.getElementById('signup-box');
+            if (!signupBox.classList.contains('active')) {
+                signupBox.classList.add('active');
+            }
+        });
+
+        document.addEventListener('click', function(event) {
+            var loginBox = document.getElementById('login-box');
+            var isClickInside = document.getElementById('form-login').contains(event.target);
+            var isLoginLink = document.getElementById('login').contains(event.target);
+
+            var signupBox = document.getElementById('signup-box');
+            var isClickInsideSignup = document.getElementById('form-signup').contains(event.target);
+            var isSignupLink = document.getElementById('signup').contains(event.target);
+
+            if (!isClickInside && !isLoginLink) {
+                loginBox.classList.remove('active');
+            }
+
+            if (!isClickInsideSignup && !isSignupLink) {
+                signupBox.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
